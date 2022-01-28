@@ -32,7 +32,7 @@ A user has following properties:
 A user interaction can either be reading a content or liking a content.
 An interaction has been stored in the following manner:
 
-- Read Model
+- User Event Model
 
   - - User ID
   - - Liked content IDs
