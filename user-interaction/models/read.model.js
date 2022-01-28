@@ -1,12 +1,8 @@
-// like model in the database
+// read model in the database
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const jwtSecret = process.env.JWT_SECRET;
-
 
 const Schema = mongoose.Schema;
-const likeSchema = new Schema({
+const readSchema = new Schema({
     content: {
         type: Schema.Types.ObjectId,
         // ref: 'Content',
@@ -20,4 +16,4 @@ const likeSchema = new Schema({
     }]
 })
 // Export the model
-module.exports = mongoose.model('Like', likeSchema);
+module.exports = mongoose.model('Read', readSchema);
