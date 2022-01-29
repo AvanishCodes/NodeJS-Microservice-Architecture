@@ -74,5 +74,7 @@ An interaction has been stored in the following manner:
   docker build -t user-interaction-service .
   ```
 
+- Now, run the docker images for the microservices from the docker desktop application. Use the ports 3001 for content service, 3002 for user service and 3003 for user interaction service.
+
 - Now you can run the docker images on your local machine.
   Also, cehck the postman collection for the URL patterns in the services.
