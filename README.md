@@ -45,3 +45,34 @@ An interaction has been stored in the following manner:
 - Read Model
 - - Content ID
 - - Users who read the content
+
+# Create the docker images for the microservices
+
+1. Create the docker image for the content service
+2. Create the docker image for the user service
+3. Create the docker image for the user interaction service
+
+> First of all populate the `.env` files in `content`, `user` and `user-interaction` directories.
+
+> Follow these steps on three different terminals:
+
+- Create the docker image for the content service
+
+  ```cd content
+  docker build -t content-service .
+  ```
+
+- Create the docker image for the user service
+
+  ```cd user
+  docker build -t user-service .
+  ```
+
+- Create the docker image for the user interaction service
+
+  ```cd user-interaction
+  docker build -t user-interaction-service .
+  ```
+
+- Now you can run the docker images on your local machine.
+  Also, cehck the postman collection for the URL patterns in the services.
