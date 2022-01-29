@@ -23,6 +23,6 @@ const contentSchema = new mongoose.Schema({
     }
 })
 
-const content = mongoose.model("Content", contentSchema)
+const Content = mongoose.model("Content", contentSchema)
 
-module.exports = content
+module.exports = Content
